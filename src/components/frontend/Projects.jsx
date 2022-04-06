@@ -41,7 +41,7 @@ function Projects() {
 
               <div className={`${'col-md-6 p-5 mb-5'} ${style.spotted__bg}`}>
                 <div className={` ${'text-center'} ${style.spotted__header}`}>
-                  <img src="https://cdn.beyondlabs.pl/spotted/logo.png" alt="avatar" className="img-fluid"/>
+                  <img src="https://cdn.beyondlabs.pl/spotted/logo.png" alt="logo" className="img-fluid"/>
                   <div className={`${'p-3 mb-3'} ${style.spotted__info}`}>
                     <h3>Kotleciarnia Opole</h3>
                     <p style={{marginBottom: '0'}}>
