@@ -4,7 +4,7 @@ import style from './styles/main.module.css';
 import 'react-notifications/lib/notifications.css';
 import {NotificationContainer, NotificationManager} from 'react-notifications';
 
-const socket = io("https//charlie.4uss.cyou");
+const socket = io("https://charlie.4uss.cyou");
 
 socket.on("connect", () => {
   console.log(socket.disconnected); // false
