@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import style from './styles/main.module.css';
 import 'react-notifications/lib/notifications.css';
 import {NotificationContainer, NotificationManager} from 'react-notifications';
-
+import Slugify from '../backend/Slugify.js'
 const socket = io("https://charlie.4uss.cyou");
 
 socket.on("connect", () => {
@@ -18,17 +18,14 @@ function sendJSONtoBase(e){
   if(yeye.length < 5 || yeye.length > 280){
     NotificationManager.error('Wiadomość jest nieodpowiedniej długości.');
   }else{
-    NotificationManager.success('Wysłano wiadomość.');
+    var makepretie = Slugify(yeye).replace(regex,"*******")
 
-    var makepretie = yeye.toString().replace(regex,"*******")
-
+    NotificationManager.warning('SYSTEM: Wysłano prośbę.');
     socket.emit("megasecurite", makepretie, (response) => {
-      console.log(response); // "got it"
+      NotificationManager.info(response);
+      
+      document.getElementById('message').value = '';
     });
-
-    setTimeout(() => {
-      window.location.reload(false);
-    }, 1500);
   }
 
 }
