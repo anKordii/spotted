@@ -12,6 +12,7 @@ socket.on("connect", () => {
 function sendJSONtoBase(e){
   e.preventDefault();
   var yeye = document.getElementById('message').value;
+  var designPost = document.getElementById('scheme').value;
 
   var regex = /nigger|nugger|pedał/gi;
 
@@ -21,7 +22,7 @@ function sendJSONtoBase(e){
     var makepretie = Slugify(yeye).replace(regex,"*******")
 
     NotificationManager.warning('SYSTEM: Wysłano prośbę.');
-    socket.emit("megasecurite", makepretie, (response) => {
+    socket.emit("megasecurite", makepretie, designPost, (response) => {
       NotificationManager.info(response);
       
       document.getElementById('message').value = '';
@@ -51,6 +52,14 @@ function Projects() {
                   <textarea className="form-control" rows={3} placeholder="Wyślij wiadomość" id="message" required></textarea>
                   <small>Twoja wiadomość jest anonimowa 😅</small>
                   <code><br/>Maksymalnie 280 znaków</code>
+
+                  <select class="form-select" id="scheme">
+                    <option value="default">Domyślny</option>
+                    <option value="dark">Ciemny</option>
+                    <option value="blue">Niebieski</option>
+                    <option value="pink">Różowy</option>
+                  </select>
+
                   <div style={{float: 'right'}} className="mt-5">
                     <button className="btn__better">Wyślij</button>
                   </div>
