@@ -57,6 +57,7 @@ function Privacy() {
 
          <h1>§ 7 Wyłączenie odpowiedzialności</h1>
          <ul>
+            <li>Administrator nie bierze odpowiedzialności za udostępnione dane osobowe, jak i wyzwiska poprzez formularz kontaktowy.</li>
             <li>Administrator stosuje wszelkie możliwe środki w celu zapewnienia bezpieczeństwa danych umieszczanych w plikach Cookie. Należy jednak zwrócić uwagę, że zapewnienie bezpieczeństwa tych danych zależy od obu stron, w tym działalności Użytkownika oraz satnu zabezpieczeń urządzenia z którego korzysta.</li>
             <li>Administrator nie bierze odpowiedzialności za przechwycenie danych zawartych w plikach Cookie, podszycie się pod sesję Użytkownika lub ich usunięcie, na skutek świadomej lub nieświadomej działalność Użytkownika, wirusów, koni trojańskich i innego oprogramowania szpiegującego, którymi może być zainfekowane Urządzenie Użytkownika.</li>
             <li>Użytkownicy w celu zabezpieczenia się przed wskazanymi w punkcie poprzednim zagrożeniami powinni stosować się do <a href="https://nety.pl/cyberbezpieczenstwo/">dobrych praktyk korzystania z sieci</a>.</li>
@@ -67,11 +68,6 @@ function Privacy() {
          <ul>
             <li>Ograniczenie zapisu i dostępu do plików Cookie na Urządzeniu Użytkownika może spowodować nieprawidłowe działanie niektórych funkcji Serwisu.</li>
             <li>Administrator nie ponosi żadnej odpowiedzialności za nieprawidłowo działające funkcje Serwisu w przypadku gdy Użytkownik ograniczy w jakikolwiek sposób możliwość zapisywania i odczytu plików Cookie.</li>
-         </ul>
-
-         <h1>§ 9 Odpowiedzialność</h1>
-         <ul>
-            <li>Administrator nie ponosi żadnej odpowiedzialności za udostępnione dane osobowe, jak i wyzwiska poprzez formularz.</li>
          </ul>
 
          <h1>§ 10 Zmiany w Polityce Cookie</h1>

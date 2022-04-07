@@ -13,8 +13,7 @@ function Navigation() {
   return (
     <nav className="navbar navbar-light navbar-expand-lg navigation-clean-button" id="topnav">
         <div className="container">
-          <Link to={`/`} className="navbar-brand" style={{fontSize: "1.25rem", fontWeight: "bold", color: 'black'}}>Beyondlabs</Link>
-          <button data-bs-toggle="collapse" className="navbar-toggler" data-bs-target="#navcol-2"><span className="visually-hidden">Toggle navigation</span><span className="navbar-toggler-icon"></span></button>
+          <Link to={`/`} className="navbar-brand" style={{fontSize: "1.25rem", color: 'black'}}>Beyondlabs</Link>
             <div className="collapse navbar-collapse" id="navcol-2">
                 <ul className="navbar-nav me-auto">
                   <li>
