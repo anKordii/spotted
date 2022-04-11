@@ -40,7 +40,6 @@ function Projects() {
                       Jeżeli chcesz kogoś <strong style={{color: 'black'}}>pozdrowić</strong>,<br/>
                       szukasz <strong style={{color: 'black'}}>czegoś</strong>/<strong style={{color: 'black'}}>kogoś</strong>
                       <br/>albo chcesz się podzielić jakaś <strong style={{color: 'black'}}>historią</strong>?<br/>
-                      <hr/>
                       <strong style={{color: 'black', fontFamily: "'Roboto Mono', monospace"}}>PISZ DO NAS</strong></p>
                   </div>
                 </div>
@@ -76,7 +75,7 @@ function Projects() {
                         <img src="https://cdn.beyondlabs.pl/spotted/schemat/pink.png" alt="pink" className="img-fluid"></img>
                       </div>
 
-                      <select class="form-select mt-2" id="scheme">
+                      <select className="form-select mt-2" id="scheme">
                         <option value="default">Domyślny</option>
                         <option value="dark">Ciemny</option>
                         <option value="blue">Niebieski</option>

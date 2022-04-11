@@ -18,7 +18,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/",
+  "start_url": "https://spotted.beyondlabs.pl/",
   "display": "standalone",
   "theme_color": "#efc9a4",
   "background_color": "#1d2025"
