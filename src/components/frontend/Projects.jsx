@@ -16,10 +16,12 @@ function sendJSONtoBase(e){
   if(yeye.length < 5 || yeye.length > 280){
     NotificationManager.error('Wiadomość jest nieodpowiedniej długości.');
   }else{
+    document.getElementById("disable_me").disabled = true;
     NotificationManager.warning('SYSTEM: Wysłano prośbę.');
     socket.emit("megasecurite", yeye, designPost, (response) => {
       NotificationManager.info(response);
       
+      document.getElementById("disable_me").disabled = false;
       document.getElementById('message').value = '';
     });
   }
@@ -48,7 +50,7 @@ function Projects() {
                   <small>Twoja wiadomość jest anonimowa 😅</small>
                   <small><br/>Maksymalnie <strong>280</strong> znaków <strong>/</strong> Minimalnie <strong>5</strong> znaków</small>
                   <div style={{float: 'right'}} className="mt-5">
-                    <button className="btn__better">Wyślij</button>
+                    <button className="btn__better" id="disable_me">Wyślij</button>
                   </div>
                 </form>
               </div>
