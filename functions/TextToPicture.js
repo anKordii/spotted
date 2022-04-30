@@ -4,6 +4,7 @@ const config = require('../config/config.js');
 class TextToPicture {
   static async convert({
     text,
+    scheme,
     size = 64,
     color = 'black',
     customFont,
@@ -13,8 +14,26 @@ class TextToPicture {
     if (!text) {
       throw new Error('text is required')
     }
+    let image;
 
-    let image = await Jimp.read(config.scheme)
+    if (typeof scheme === 'string') {
+
+      if(scheme === 'dark'){
+        image = await Jimp.read(config.scheme_custom.dark);
+        color = 'white';
+      }else if(scheme === 'blue'){
+        image = await Jimp.read(config.scheme_custom.blue);
+        color = 'white';
+      }else if(scheme === 'pink'){
+        image = await Jimp.read(config.scheme_custom.pink);
+        color = 'white';
+      }else{
+        image = await Jimp.read(config.scheme)
+      }
+
+    } else {
+      image = await Jimp.read(config.scheme)
+    }
 
     let font
 
